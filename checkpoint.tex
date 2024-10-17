@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{graphicx}
+
+\title{CS63 Spring 2024\\Final Project Checkpoint}
+\author{Alex Huynh, Branley Mmasi}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Project Goal}
+
+For this poject, we want to use a Recurrent Neural Network (RNN) to assess
+tweets for emotions. We will be using Kaggle's "Emotions" dataset to train
+and test our model.
+
+\section{AI Methods Used}
+
+For this project, we will be building an RNN. We will use the Keras library
+to help us build and train this model.
+
+\section{Staged Development Plan}
+
+\begin{enumerate}
+    \item Research how an RNN works and look for dataset (Kaggle's Emotions)
+    \item Prepare the dataset (split into train and test, tokenize)
+    \item Use Keras library build an RNN, describing each steps with comments
+    \item Train and test using the dataset
+    \item Write code to help us visualize accuracy of model (confusion matrix, learning curves)
+    \item Adjust hyperparameters and train until satisfied with accuracy (>90\%)
+    \item Create a program that takes a piece of text and outputs an emotion
+    \item Writeup and presentation
+        \begin{enumerate}
+            \item Describe what an RNN is, how it differs from other
+            models we've learned in class, and why its useful
+            \item Describe dataset
+            \item Describe network (what the model is doing to each input)
+            \item Assess model using accuracy, confusion matrix, and program
+        \end{enumerate}
+    \item Stretch Goals
+        \begin{enumerate}
+            \item Break acronyms/chat words into words (e.g. lol, btw, brb)
+            \item See which words is associated to each emotions
+            \item Begin building our own RNN
+                \begin{enumerate}
+                    \item Tokenization
+                    \item Embedding
+                    \item Network
+                    \item Backpropation through time
+                    \item Assess with toy dataset (like XOR but for text)
+                \end{enumerate}
+        \end{enumerate}
+
+\end{enumerate}
+
+\section{Measure of Success}
+
+Our project is successful if we can complete our main goals. Ultimately,
+our final product will be similar to the final product of our CNN lab with
+the addition of our program that utilizes the network.
+
+
+\section{Plans for Analyzing Results}
+
+We will be using a confusion matrix to analyze the accuracy of our model,
+and undestand where our model is likely to mess up. We will also use our
+program to analyze our model's accuracy. We'll feed the program various
+texts and keep track of how many times it accurately outputs an emotion,
+as well as nonsense data to see what the model does.
+
+\end{document}

@@ -1,4 +1,3 @@
-# Predicting-emotions-with-GRUs
 To access our data, uncompress the attached zip file ```archive.zip``` into a ```text.csv``` file.
 
 To access our project, run the following commands:
